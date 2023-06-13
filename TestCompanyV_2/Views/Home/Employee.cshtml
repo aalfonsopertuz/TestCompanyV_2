@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Employee";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <div class="form-outline">
+                    <label class="form-label" for="form1">Identificación</label>
+                    <input id="txt-identificacion" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-end mt-4">
+            <button type="button" class="btn btn-primary" id="btn-buscar">Buscar</button>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table align-middle mb-0 bg-white" id="tbl-employee">
+            <thead class="bg-light">
+                <tr>
+                    <th data-name="employee_name">Name</th>
+                    <th data-name="employee_salary">Salary</th>
+                    <th data-name="employee_age">Age</th>
+                    <th data-name="employee_salary_per_year">Salary per Year</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>
+
+<script src="~/js/employee.js"></script>
